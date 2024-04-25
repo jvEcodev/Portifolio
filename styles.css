@@ -1,6 +1,7 @@
 @charset "utf-8";
 
 
+
 @font-face {
     font-family: Work ;
     src: url(fontes/homeworks/Homeworks.otf) format('opentype');
@@ -27,6 +28,7 @@
 :root{
     --font-titulo: 'Titulo'
 }
+
 
 #redes img{
     width: 35px;
@@ -61,16 +63,17 @@ body {
 }
 
 
-#menu{
+#menu {
     text-align: left;
-    
+    display:inline-block ;
+    padding: 0px;
 }    
 #menu:hover{
     max-width: 800px;
     min-width: 280px;
     transform: translate(-3px, -3px);
     transition-duration: .3s;
-    box-shadow: 3px 3px 3px 5px gray;
+    box-shadow: 2px 2px 2px gray;
     border-radius: 8px;
     padding: 5px;
     background-color: #fff;
@@ -86,7 +89,7 @@ main{
     background-color: #dddddd;
     padding: 20px;
     margin-top: 0px;
-    box-shadow: 4px 4px 9px black;
+    
 
     border-radius: 0px 0px 20px 20px;
     
@@ -166,7 +169,7 @@ section {
     min-width: 280px;
     transform: translate(-3px, -3px);
     transition-duration: .3s;
-    box-shadow: 3px 3px 3px 5px gray;
+    box-shadow: 2px 2px 2px  gray;
     
 }
 
@@ -190,7 +193,7 @@ h2 {
     min-width: 280px;
     transform: translate(-3px, -3px);
     transition-duration: .3s;
-    box-shadow: 3px 3px 3px 5px gray;
+    box-shadow: 2px 2px 2px  gray;
     
 }
 .educacao-item:hover{
@@ -198,13 +201,13 @@ h2 {
     min-width: 280px;
     transform: translate(-3px, -3px);
     transition-duration: .3s;
-    box-shadow: 3px 3px 3px 5px gray;
+    box-shadow: 2px 2px 2px  gray;
     
 }
 
 .experiencia-item h3, .educacao-item h3 {
     margin-top: 0;
-    font-family: var(--font-karma);
+    font-family: var(--font-titulo);
     padding: 10px;
 }
 
@@ -221,15 +224,13 @@ footer {
     box-shadow: 4px 4px 9px rgb(255, 255, 255);
     text-align: center;
     
-    font-family: var(--font-karma);
+    font-family: var(--font-titulo);
 }
 
 footer p {
     margin: 0;
+    display: flexbox;
     
 }
 
-.fa-envelope {
-    margin-right: 5px;
-    
-}
+
